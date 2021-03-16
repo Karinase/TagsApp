@@ -7,7 +7,7 @@ This is an app for saving numeric tags
 Download the solution with git clone and open tags.html on your favourite browser
 
 ```
-git clone foobar
+git clone https://github.com/Karinase/TagsApp.git
 ```
 
 ## Usage
