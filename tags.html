@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <title>Tags app</title>
+        <h1>Welcome to my tags website</h1>
+    </head>
+
+    <body>
+        <div id="label">
+            <label for="tags">Enter tags here:</label>
+        </div>
+        <div id="input">
+            <textarea name="tags" id="tags" placeholder="commas, semicolons and new lines allowed"></textarea>
+        </div>
+        <div id="buttons">
+            <button type="button" name="edit" onclick="Edit()">Edit</button>
+            <button type="button" name="add" onclick="Add()">Add</button>
+        </div>
+        <ul class="tags-list" id="tags-list">
+        </ul>
+
+        <div id="editModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id=edit>
+                    <h1>Edit tags</h1>
+                    <label for="edit-tags">Edit tags here (commas, semicolons and new lines allowed):</label>
+                    <textarea name="edit-tags" id="edit-tags"></textarea>
+                    <button type="submit" name="save" onclick="Save()">Save</button>
+                </div>
+            </div>
+          
+        </div>
+
+        <script src="script.js"></script>
+        <script>
+            Init();
+        </script>
+    </body>
+</html>
